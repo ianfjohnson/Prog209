@@ -1,0 +1,34 @@
+<! DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+</head>
+
+<body>
+<p>When you have that working, modify your program to write"FizzFuzz", for numbers that are divisible by both 3 and 5.</p>
+
+    <script>        
+        for (i=1; i<301; i++) {
+            //check for fizzfuzzes
+            if (i%3 == 0 && i%5 ==0) {
+                console.log(i + ": fizzfuzz")
+                }
+            //then check for fizz
+            else if (i%5 == 0) {
+                console.log(i + ": fizz");
+            }
+            //then check for fuzz
+            else if (i%7 == 0) {
+                console.log(i + ": fuzz");
+            }
+            //otherwise just print the number
+            else {
+                console.log(i)
+            }
+        }
+	</script>
+
+</body>
+
+</html>

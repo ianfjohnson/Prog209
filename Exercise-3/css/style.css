@@ -1,0 +1,49 @@
+#header {
+    background-color: #89B47E;
+    width: 700px;
+    margin: 0px;
+    overflow: hidden;
+}
+#main {
+    background-color: red;
+    height: 500px;
+    width: 700px;
+    margin: 0px;
+}
+#left {
+    float: left;
+    margin: inherit;
+}
+#right {
+    float: right;
+    background-color: #FDCEC6;
+    width: 200px;
+    height: 100%;
+    margin: inherit;
+    text-align: center;
+}
+#footer {
+    background-color: #BCB869;
+    width: 700px;
+    height: 40px;
+    bottom: 0;
+    text-align: center;
+    overflow: hidden;
+}
+#player {
+    position: absolute;
+    left: 185px;
+    top: 225px;
+}
+
+.button {
+    margin: 2px;
+}
+
+h2 {
+    margin: 15px;
+}
+
+h3 {
+    margin: 0px;
+}
