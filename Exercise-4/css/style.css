@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    background-image: url(/img/wallpaper.jpg);
+    background-size: 100%;
+}
+h1 {
+    font-weight: bold;
+    font-size: 32px;    
+}
+#main{
+    width:750px; height:500px;
+    margin:0 auto;
+}
+#userinput{
+	float:left;
+	margin-top:25px;
+	padding:20px;
+	background-color:#FF9BA5;
+	width:300px;
+    height:500px;
+    border: 10px solid #FF4E7C;
+}
+#useroutput{
+	float:left;
+	margin-top:25px;
+	margin-left:20px;
+	padding:20px;
+	width:300px; height:500px;
+	background-color:#FF9BA5;
+    border: 10px solid #FF4E7C;
+}
+#donut {
+    padding: 25px;
+}
+p:first-of-type {
+    font-weight: bold;
+}

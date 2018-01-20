@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />   
+</head>
+
+<!--
+DONE Create four form field entries rather than the current two entries. 
+
+DONE At least one field should be text entry. Other fields can be text entry or other form elements.
+
+DONE Instead of having it ask for weather items have it ask for donut items.
+
+Add an image that relates to the donut theme. You may use an image you find on the Web or create your own image.
+-->
+    
+<body>
+    <div id="main">
+        <section id="userinput">
+            <h1>Order Form</h1><hr /><br />
+            <form id="input">
+            
+                <div>
+                    <p>Customer Name: </p>
+                    <input type="input" id="customer" size="20">
+                </div><br />
+
+                <div>
+                    <p>Quantity</p>
+                    <p>Please enter a quantity between 1 and 36</p>
+                    <input type="input" id="quantity" size="20">
+                </div><br />
+                
+                <div>
+                    <p>Sprinkles:</p>                    
+                    <input type="radio" name="sprinkle" value="Yes" />Yes
+                    <input type="radio" name="sprinkle" value="No" checked="checked" />No
+                </div><br />
+                
+                <div>
+                    <p>Filling:<p/>
+                    <input type="radio" name="filling" value="Custard" />Custard
+                    <input type="radio" name="filling" value="Chocolate" />Chocolate
+                    <input type="radio" name="filling" value="None" checked="checked" />None
+                </div><br />
+                
+                <div>
+                    <p>Comments:</p>
+                    <textarea name="comment" cols="20" rows="4" id="comment" >Include any comments or special orders.</textarea>
+                </div><br />
+                
+                <div>
+                    <input type="button" id="button" value="Order">
+                </div>
+            </form>
+        </section>
+    
+        <section id="useroutput">
+            <h1>Internet Donuts</h1><hr /><br />
+            <p>Welcome to Internet Donuts! You can use the order form on the left to order your donuts.</p><br />
+            <img id="donut" src="img/donut.png" height="250" width="250" alt="A tasty donut!">
+        </section>
+    </div>
+    
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
