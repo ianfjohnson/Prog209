@@ -1,0 +1,72 @@
+body {
+    background-color: darkgrey;
+    background-image: url(../img/starscape_wip_1_by_vaniyz-d2y4g9y.png);
+}
+#main {
+    background-color: lightgrey;
+    width: 700px;
+    height: 1020px; 
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.tile {
+    padding: 15px;
+    width: 300px;
+    height: 300px;
+    font-weight: bold;
+}
+
+#Jupiter {
+    float: left;
+    background-color: #c99039;
+    border: 10px solid #d8ca9d;
+}
+#Jupiter h1 {
+    color: #d8ca9d;
+}
+
+#Venus {
+    float: left;
+    background-color: #e7d520;
+    border: 10px solid #c18f17;
+}
+#Venus h1 {
+    color: #a57c1b;
+}
+
+#Saturn {
+    float: left;
+    background-color: #cecece;
+    border: 10px solid #bfbdaf;
+}
+#Saturn h1 {
+    color: #bfbdaf;
+}
+
+#Mars {
+    float: left;
+    background-color: #c1440e;
+    border: 10px solid #fda600;
+}
+#Mars h1 {
+    color: #fda600;
+}
+
+#Earth {
+    float: left;
+    background-color: #6b93d6;
+    border: 10px solid #9fc164;
+}
+#Earth h1 {
+    color: #9fc164;
+}
+
+#sunnyPlanets {
+    float: left;
+    background-color: white;
+    border: 10px solid darkgrey;
+}
+#sunnyPlanets h1 {
+    color: darkgrey;
+}
