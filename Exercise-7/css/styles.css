@@ -1,0 +1,18 @@
+body {
+    width: 400px;
+}
+
+div div{
+    border: 5px solid black;
+    margin: 5px;
+}
+
+.right{
+    position: relative;
+}
+
+.red{
+    border-color: red;
+    color: red;
+    font-weight: bold;
+}
