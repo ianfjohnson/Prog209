@@ -31,18 +31,18 @@ $(document).ready(function () {
         $("#f1").append('<p>' + name + ' is an error!</p>');
 
         $('#f2').html(
-                "Phone Number: <input id='inNum' type='text' value='" + num + "'>"
-            )
+            "Phone Number: <input id='inNum' type='text' value='" + num + "'>"
+        )
         if (isNaN(num)) {
             $('#f2').addClass("red");
             $("#f2").append('<p>A number is required!</p>');
         } else {
-                $('#f2').removeClass("red");    
+            $('#f2').removeClass("red");
         }
 
         $('#f3').html(
-                "Favorite Color: <input id='inCol' type='text' value='" + col + "'> GROOVY CHOICE MAN!!!"
-            )
+            "Favorite Color: <input id='inCol' type='text' value='" + col + "'> GROOVY CHOICE MAN!!!"
+        )
     });
 
     //    5. Reference the Lynda.com jquery tutorial. Convert the image slide show in the tutorial to an autoplaying slide show, Create a fade translation between the slides, have each image last for three seconds, and make the overlay background more transparent. 
@@ -51,15 +51,29 @@ $(document).ready(function () {
     //6. when the user clicks on a button it animates the image across the screen and fades the image to 50%. 
 
     $("#btn2").click(function () {
-        $(".right").animate({
-            opacity: .5,
-            top: '+=400'
-        }, 500, 'swing', function () {
-            $(".right").animate({
+        var $r = $('.right');
+        var top = $r.css('top');
+        var t1 = new TimelineLite();
+
+            t1.to($r, 0, {
+                opacity: 1
+            });            
+            t1.to($r, 1, {
+                rotation: +720
+            });
+            t1.to($r, 1, {
+                opacity: 0.5
+            }, '-=1');
+        t1.to($r, 1, {
+                rotation: -720
+            });
+            t1.to($r, 1, {
+                opacity: 0
+            }, '-=1');
+            t1.to($r, .1, {
                 opacity: 1,
-                top: '-=400'
-            })
-        })
+                delay: 3
+            });
     });
 
 });

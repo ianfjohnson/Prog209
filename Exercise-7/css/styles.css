@@ -9,6 +9,8 @@ div div{
 
 .right{
     position: relative;
+    margin: 5px;
+    float: right;
 }
 
 .red{

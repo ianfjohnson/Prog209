@@ -3,7 +3,7 @@ $(function() {
 
 	var $flowers = $('#flower-items');
 	
-//    the tutorial exercise file already had a 3 second fade transition with opacity
+//    the tutorial exercise file already had a 3 second fade transition with opacity!
 	$flowers
     	.find('a')
     	.colorbox({
